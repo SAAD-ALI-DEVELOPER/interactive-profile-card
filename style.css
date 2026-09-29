@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #080b10;
+    font-family: Consolas, monospace;
+}
+
+
+
+.terminal {
+    width: 850px;
+    max-width: 90%;
+    background: #0d1117;
+    border: 1px solid #26313d;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 255, 170, 0.08);
+    overflow: hidden;
+}
+
+
+
+
+/* Profile Area */
+
+.profile-area {
+    display: flex;
+    gap: 45px;
+    padding: 45px;
+}
+
+
+/* Image */
+
+.image-section {
+    min-width: 220px;
+    text-align: center;
+}
+
+.image-frame {
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+    border: 1px dashed #00d084;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-status {
+    margin-top: 20px;
+    color: #00d084;
+    font-size: 12px;
+}
+
+
+/* Information */
+
+.info {
+    flex: 1;
+}
+
+.command {
+    color: #00d084;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.info h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.info h2 {
+    color: #e6edf3;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #8b949e;
+    margin-bottom: 18px;
+}
+
+#profileDescription {
+    max-width: 500px;
+    color: #aab4be;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 8px;
+    border: 1px solid #00d084;
+    border-radius: 6px;
+    background: transparent;
+    color: #00d084;
+    font-family: Consolas, monospace;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00d084;
+    color: #080b10;
+}
+
+
+/* Input */
+
+.input-area {
+    margin-top: 30px;
+}
+
+input {
+    width: 65%;
+    padding: 11px;
+    background: #080b10;
+    border: 1px solid #26313d;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    font-family: Consolas, monospace;
+}
+
+input:focus {
+    border-color: #00d084;
+}
+
+
+/* Output */
+
+.output {
+    margin-top: 18px;
+    padding: 12px;
+    background: #080b10;
+    border-left: 3px solid #00d084;
+}
+
+#welcomeMessage {
+    color: #00d084;
+    font-size: 13px;
+}
+
+
+.status-btn {
+    margin-top: 20px;
+}
+
+#status {
+    display: inline-block;
+    margin-left: 10px;
+    color: #8b949e;
+    font-size: 11px;
+}
+

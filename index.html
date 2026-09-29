@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal">
+      <!-- Main Profile -->
+      <div class="profile-area">
+        <!-- Image Section -->
+        <div class="image-section">
+          <div class="image-frame">
+            <img
+              id="profileImage"
+              src="/assets/profile1.jpeg"
+              alt="Developer"
+              onmouseover="imageHover()"
+              onmouseout="imageOut()"
+            />
+          </div>
+
+          <p class="image-status">● ONLINE</p>
+        </div>
+
+        <!-- Information Section -->
+        <div class="info">
+          <p class="command">// USER PROFILE</p>
+
+          <h1 id="profileTitle">DEVELOPER IDENTITY</h1>
+
+          <h2 id="profileName">Muhammad Saad</h2>
+
+          <p id="profileRole" class="role">Frontend Developer</p>
+
+          <p id="profileDescription">
+            Learning JavaScript, building websites, and exploring the world of
+            full-stack development.
+          </p>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button onclick="changeProfile()">Switch Developer</button>
+
+            <button onclick="changeImage()">Load Avatar</button>
+          </div>
+
+          <!-- User Input -->
+          <div class="input-area">
+            <p class="command">> ENTER YOUR NAME</p>
+
+            <input type="text" id="userName" placeholder="Type your name..." />
+
+            <button onclick="showName()">Execute</button>
+          </div>
+
+          <!-- Output -->
+          <div class="output">
+            <p id="welcomeMessage">> System ready...</p>
+          </div>
+
+          <!-- Bonus -->
+          <button class="status-btn" onclick="changeStatus()">
+            Change Status
+          </button>
+
+          <p id="status">STATUS: CURRENTLY LEARNING</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
